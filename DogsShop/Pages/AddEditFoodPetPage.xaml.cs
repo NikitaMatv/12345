@@ -60,5 +60,16 @@ namespace DogsShop.Pages
                 e.Handled = true;
             }
         }
+        //private void BtImage_Click(object sender, RoutedEventArgs e)
+        //{
+        //    var dialog = new OpenFileDialog();
+        //    if (dialog.ShowDialog().GetValueOrDefault())
+        //    {
+        //        contextmeal.Images = File.ReadAllBytes(dialog.FileName);
+        //        DataContext = null;
+        //        DataContext = contextmeal;
+        //    }
+        //}
+
     }
 }
