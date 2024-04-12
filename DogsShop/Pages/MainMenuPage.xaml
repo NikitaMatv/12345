@@ -1,0 +1,24 @@
+﻿<Page x:Class="DogsShop.Pages.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DogsShop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="MainMenuPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="BtFood" Click="BtFood_Click" Margin="5" FontSize="15">Корма</Button>
+            <Button x:Name="BtCart" Click="BtCart_Click" Margin="5" FontSize="15">Корзина</Button>
+            <Button x:Name="BtHistary" Click="BtHistary_Click" Margin="5" FontSize="15">История</Button>
+            <Button x:Name="BtLeave" Click="BtLeave_Click" Margin="5 450 5 5" FontSize="15">Выход</Button>
+        </StackPanel>
+        <Frame x:Name="MenuFrame" NavigationUIVisibility="Hidden" Grid.Column="1"></Frame>
+    </Grid>
+</Page>
